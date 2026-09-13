@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN'
+  'http://www.w3.org/TR/1999/REC-html-19991224/strict.dtd'>
+
+  <!--
+    Rashai Robertson
+    Bellevue University
+    CSD-440
+    September 13, 2026
+    Module Assignment 7
+  -->
+
+<html>
+
+  <head>
+
+    <title> Rashai Form </title>
+
+  </head>
+
+  <body bgcolor='f0f8ff'>
+
+    <center>
+
+      <h1>Student Information Form</h1>
+
+      <form action='RashaiResponse.php' method='post'>
+
+        <p>
+          <label>
+            Full Name:
+            <input name='fullName' type='text' size='30' />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Email Address:
+            <input name='email' type='text' size='30' />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Age:
+            <input name='age' type='number' min='1' max='120' />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Height in Inches:
+            <input name='height' type='number' step='0.1' min='1' />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Birth Date:
+            <input name='birthDate' type='date' />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Student Classification
+            <br />
+          </label>
+          <select name='classification'>
+            <option selected='selected' value=''>Choose one</option>
+            <option value='Freshman'>Freshman</option>
+            <option value='Sophomore'>Sophomore</option>
+            <option value='Junior'>Junior</option>
+            <option value='Senior'>Senior</option>
+          </select>
+        </p>
+
+        <p>
+          Are you an online student?
+          <br />
+          <label>
+            Yes
+            <input name='onlineStudent' type='radio' value='Yes' />
+          </label>
+          <label>
+            No
+            <input name='onlineStudent' type='radio' value='No' />
+          </label>
+        </p>
+
+        <p>
+          <input type='submit' value='Submit' />
+        </p>
+
+        <p>
+          <input type='reset' value='Clear Entries' />
+        </p>
+
+      </form>
+
+    </center>
+
+  </body>
+</html>

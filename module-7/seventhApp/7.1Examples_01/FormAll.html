@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN'
+  'http://www.w3.org/TR/1999/REC-html-19991224/strict.dtd'>
+
+<html>
+
+
+  <head>
+
+    <title> XHTML Form - All </title>
+
+  </head>
+
+  <body>
+
+    <form action='postPHP.php' method='post'>
+
+      <p>
+        <input type='hidden' name='hiddenInput' value='Hidden Informatikon' />
+      </p>
+
+      <p>
+        <label>
+          Option Selection
+          <br />
+        </label>
+        <select name='select'>
+           <option selected='selected' value='1'>Selection one</option>
+           <option value='2'>Selection two</option>
+           <option value='3'>Selection three</option>
+           <option value='4'>Selction four</option>
+        </select>
+      </p>
+
+      <p>
+        <label>
+          Text Area
+          <br />
+        </label>
+        <textarea name='textarea' rows='6' cols='20'></textarea>
+      </p>
+
+      <p>
+        <label>
+          Radio Button 1
+          <input name='radioButton' type='radio' value='Radio_1'
+                 checked='checked' />
+        </label>
+        <br />
+        <label>
+          Radio Button 2
+          <input name='radioButton' type='radio' value='Radio_2' />
+        </label>
+        <br />
+        <label>
+          Radio Button 3
+          <input name='radioButton' type='radio' value='Radio_3' />
+        </label >
+        <br />
+        <label>
+          Radio Button 4
+          <input name='radioButton' type='radio' value='Radio_4' />
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Check Box 1
+          <input name='checkBox_1[]' type='checkbox' value='CheckBox_1' />
+        <br />
+        </label>
+        <label>
+          Check Box 2
+          <input name='checkBox_1[]' type='checkbox' value='CheckBox_2' />
+        <br />
+        </label>
+        <label>
+          Check Box 3
+          <input name='checkBox_1[]' type='checkbox' value='CheckBox_3' />
+        <br />
+        </label>
+        <label>
+          Check Box 4
+          <input name='checkBox_1[]' type='checkbox' value='CheckBox_4' />
+        <br />
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Password:
+          <input name='password_1' type='password' size='15' />
+        </label>
+      </p>
+
+      <p>
+        <input type='submit' value='Submit' />
+      </p>
+
+      <p>
+        <input type='reset' value='Clear Entries' />
+      </p>
+
+      </form>
+
+  </body>
+</html>
