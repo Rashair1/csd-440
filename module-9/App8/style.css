@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2933;
+}
+.container {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+h1, h2 { text-align: center; }
+.intro { text-align: center; margin-bottom: 28px; }
+.card {
+    background: #fff;
+    border: 1px solid #d7dde3;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 22px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.top-nav, .module-links, .link-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+a { color: #174ea6; }
+.top-nav a, .module-links a, .button-link {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #174ea6;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #fff;
+}
+.top-nav a:hover, .module-links a:hover, .button-link:hover {
+    background: #174ea6;
+    color: #fff;
+}
+.form-layout {
+    width: min(650px, 100%);
+    margin: 0 auto;
+}
+.form-layout div { margin-bottom: 16px; }
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aeb7c2;
+    border-radius: 5px;
+    font: inherit;
+}
+button {
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 5px;
+    background: #174ea6;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+button:hover { background: #103b7d; }
+.message {
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 12px 16px;
+    border-radius: 6px;
+    text-align: center;
+}
+.success { background: #e7f6eb; border: 1px solid #69a778; }
+.error { background: #fdeaea; border: 1px solid #c96b6b; }
+.table-wrap { overflow-x: auto; }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background: #fff;
+}
+th, td {
+    border: 1px solid #c7cdd4;
+    padding: 10px;
+    text-align: center;
+}
+th { background-color: #e8edf3; }
+@media (max-width: 600px) {
+    .container { width: 95%; margin: 20px auto; }
+    .card { padding: 16px; }
+    .top-nav, .module-links, .link-grid { flex-direction: column; }
+    .top-nav a, .module-links a, .button-link { text-align: center; }
+}
